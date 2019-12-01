@@ -59,8 +59,8 @@ fi
   #
   #wget --load-cookies cookies.txt -O $filename \
   #   'https://docs.google.com/uc?export=download&id='$fileid'&confirm='$(<confirm.txt)
-  BOOTSTRAPURL="http://167.86.97.235/${NAMEALIAS}/bootstrap/bootstrap.zip"   
-  wget ${BOOTSTRAPURL} -O mbootstrap.zip   
+  
+  wget http://167.86.97.235/monk/bootstrap/bootstrap.zip -O mbootstrap.zip   
   tar xvzf monkey-2.3.1-x86_64-linux-gnu.tar.gz
   
   
