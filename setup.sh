@@ -140,10 +140,32 @@ for i in `seq 1 1 $MNCOUNT`; do
   echo "maxconnections=256" >> monkey.conf_TEMP
   echo "masternode=1" >> monkey.conf_TEMP
   echo "" >> monkey.conf_TEMP
- 
+  echo "addnode=95.216.57.97:37233" >> monkey.conf_TEMP
+  echo "addnode=195.147.39.216:37233" >> monkey.conf_TEMP
+  echo "addnode=188.40.173.194:37233" >> monkey.conf_TEMP
+  echo "addnode=95.179.146.178:37233" >> monkey.conf_TEMP
+  echo "addnode=45.32.186.230:37233" >> monkey.conf_TEMP
+  echo "addnode=37.221.193.199:37233" >> monkey.conf_TEMP
+  echo "addnode=134.255.227.59:37233" >> monkey.conf_TEMP
+  echo "addnode=164.68.113.242:37233" >> monkey.conf_TEMP
+  echo "addnode=80.209.224.35:37233" >> monkey.conf_TEMP
+  echo "addnode=90.219.213.203:37233" >> monkey.conf_TEMP
+  echo "addnode=152.136.73.10:37233" >> monkey.conf_TEMP
+  echo "addnode=199.247.18.75" >> monkey.conf_TEMP
+  echo "addnode=95.216.230.129" >> monkey.conf_TEMP
+  echo "addnode=78.141.219.202" >> monkey.conf_TEMP
+  echo "addnode=82.155.135.121" >> monkey.conf_TEMP
+  echo "addnode=68.108.190.77" >> monkey.conf_TEMP
+  echo "addnode=77.78.204.210" >> monkey.conf_TEMP
+  echo "addnode=95.164.8.207" >> monkey.conf_TEMP
+  echo "addnode=5.189.156.181" >> monkey.conf_TEMP
+  echo "addnode=185.241.54.23" >> monkey.conf_TEMP
+  echo "addnode=45.32.205.238" >> monkey.conf_TEMP
+  echo "addnode=195.147.39.216" >> monkey.conf_TEMP
+
   echo "" >> monkey.conf_TEMP
   echo "port=$PORT" >> monkey.conf_TEMP
-  echo "masternodeaddr=$IP:55002" >> monkey.conf_TEMP
+  echo "masternodeaddr=$IP:37233" >> monkey.conf_TEMP
   echo "masternodeprivkey=$PRIVKEY" >> monkey.conf_TEMP
   sudo ufw allow $PORT/tcp
 
