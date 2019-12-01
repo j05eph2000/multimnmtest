@@ -44,7 +44,7 @@ fi
   #wget https://github.com/wagerr/wagerr/releases/download/v3.0.1/wagerr-3.0.1-x86_64-linux-gnu.tar.gz
   
   #wget https://github.com/wagerr/Wagerr-Blockchain-Snapshots/releases/download/Block-826819/826819.zip -O bootstrap.zip
-  export fileid=1VqdvSvolhpwOoYgaoSHkZkmRla2kl27R
+  export fileid=17hiQvIWeGEdd4IZnl1MC_XNlMyexX1Op
   export filename=monkey-2.3.1-x86_64-linux-gnu.tar.gz
   wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='$fileid -O- \
      | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p' > confirm.txt
