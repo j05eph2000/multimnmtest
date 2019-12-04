@@ -202,5 +202,5 @@ EOF
   #(crontab -l 2>/dev/null; echo "@reboot sh ~/bin/wagerrd_$ALIAS.sh") | crontab -
 #	   (crontab -l 2>/dev/null; echo "@reboot sh /root/bin/wagerrd_$ALIAS.sh") | crontab -
 #	   sudo service cron reload
-  
+echo -e "$ALIAS $IP:37233 $PRIVKEY " 
 done
