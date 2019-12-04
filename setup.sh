@@ -79,6 +79,7 @@ fi
   echo 'export PATH=~/bin:$PATH' > ~/.bash_aliases
   source ~/.bashrc
 
+  touch masternode.conf
 
  ## Setup conf
  IP=$(curl -s4 api.ipify.org)
@@ -202,5 +203,5 @@ EOF
   #(crontab -l 2>/dev/null; echo "@reboot sh ~/bin/wagerrd_$ALIAS.sh") | crontab -
 #	   (crontab -l 2>/dev/null; echo "@reboot sh /root/bin/wagerrd_$ALIAS.sh") | crontab -
 #	   sudo service cron reload
-echo -e "$ALIAS $IP:37233 $PRIVKEY " 
+echo -e "$ALIAS $IP:37233 $PRIVKEY " >> masternode.conf
 done
