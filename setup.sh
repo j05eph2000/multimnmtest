@@ -182,7 +182,6 @@ After=network.target
 User=root
 Group=root
 Type=forking
-#PIDFile=$CONFIGFOLDER/$COIN_NAME.pid
 ExecStart=/usr/local/bin/monkeyd -daemon -conf=$CONF_DIR/monkey.conf -datadir=$CONF_DIR
 ExecStop=/usr/local/bin/monkey-cli -conf=$CONF_DIR/monkey.conf -datadir=$CONF_DIR stop
 Restart=always
@@ -190,7 +189,6 @@ PrivateTmp=true
 TimeoutStopSec=60s
 TimeoutStartSec=10s
 StartLimitInterval=0
-#StartLimitBurst=5
 [Install]
 WantedBy=multi-user.target
 EOF
