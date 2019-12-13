@@ -186,8 +186,7 @@ ExecStart=/usr/local/bin/monkeyd -daemon -conf=$CONF_DIR/monkey.conf -datadir=$C
 ExecStop=/usr/local/bin/monkey-cli -conf=$CONF_DIR/monkey.conf -datadir=$CONF_DIR stop
 Restart=always
 PrivateTmp=true
-TimeoutStopSec=60s
-TimeoutStartSec=10s
+RestartSec=1
 StartLimitInterval=0
 [Install]
 WantedBy=multi-user.target
